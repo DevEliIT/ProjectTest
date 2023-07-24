@@ -1,0 +1,175 @@
+/* normalize */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #000000 43%, #FF0000 100%);
+    overflow-x: hidden;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/* end normalize */
+
+
+.mainContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.progressBar {
+    width: 95%;
+    height: 5.2rem;
+    background-color: #fff;
+    border-radius: 4rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: #35B700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%; 
+    animation: progressBar 1s linear forwards; 
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.progressBarFillText {
+    position: absolute;
+    top: 50%;
+    right: 1rem; /* Ajuste o valor para posicionar o texto no final */
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.atentionText {
+    text-align: center;
+    color: #FAFAFA;
+    font-family: "Cairo", Sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.textContent{
+    text-align: center;
+    color: #FAFAFA;
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5.5px;
+    line-height: 30px;
+}
+
+.contentCenter {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 61rem;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 88%;
+    border-radius: 8px;
+    border: 1px solid #1E2C35;
+    background-color: #fff;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    font-family: "Cairo", Sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 34px;
+    color: #1E2C35;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: all .3s;
+}
+
+.button:hover{
+    color: #FFFFFF;
+    background-color: #6985A7;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    padding: 1rem;
+}
+.footer p{
+    color: #7A7A7A;
+    font-family: "Roboto", Sans-serif;
+    margin-bottom: .9rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.footer-content{
+    margin-right: auto;
+    margin-left: auto;
+    width: 81rem;
+}
